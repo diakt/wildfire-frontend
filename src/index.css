@@ -1,0 +1,250 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+  background-color: black;
+  /* border: red;
+  border-style: solid; */
+  min-height: 100%;
+  max-height: 100%;
+}
+
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  background-color: #996A84;
+  border: black;
+  border-style: solid;
+  min-width: 95vw;
+  max-width: 95vw;
+  min-height: 8vh;
+  max-height: 8vh;
+  margin-bottom: 2vh;
+
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 29vw;
+  margin-left: 1.5vw;
+  padding: 0;
+  /* border: red;
+  border-style: dashed; */
+  
+}
+
+.site-title {
+  margin: 0px;
+  /* margin-left: */
+  padding: 0;
+  /* border: black;
+  border-style: dashed; */
+
+}
+
+
+
+main {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  
+
+  background-color: red;
+
+  min-width: 95vw;
+  margin-bottom: 2vh;
+
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  background-color: #996A84;
+  border: black;
+  border-style: solid;
+  min-width: 95vw;
+  max-width: 95vw;
+  min-height: 8vh;
+  max-height: 8vh;
+  overflow-y:auto;
+}
+
+
+
+.loading-screen{
+  margin: 0 auto;
+}
+
+
+.fires-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.left-box{
+  display: flex;
+  flex-direction: column;
+  background-color: #549FA2;
+  overflow-y:auto;
+
+  width: 29vw;
+  height: 75vh;
+
+  /* border: white;
+  border-style: solid; */
+}
+
+.left-section-title { /* Fires in your area */
+  margin: 1vh auto;
+}
+
+.fire-unit { /* One fire, with title and data */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  margin: 1vh auto;
+  background-color: white;
+  border: red;
+  border-style: solid;
+}
+
+.fire-name {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: underline;
+
+}
+
+.fire-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  padding: 0;
+  list-style: none;
+  width: 99%;
+
+  /* border: green;
+  border-style: dashed; */
+
+}
+
+.fire-detail {
+  margin-left: 0px;
+  margin: 0;
+  padding: 0;
+
+  /* border: blue;
+  border-style: dotted; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* within mapbox container */
+.mapbox-container-map { 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end !important;
+  height: 100% !important;
+  width: 98% !important;
+
+  margin: 0;
+  padding: 0;
+
+  /* border: white;
+  border-style: solid; */
+
+
+
+}
+
+
+
+.marker {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .fire-event-list {
+  display: flex;
+  width:90%;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: lightcyan;
+
+  border: red;
+  border-style: dashed;
+}
+
+.fire-event {
+  list-style: none;
+  
+  width: 25vw;
+  border: black;
+  border-style: solid;
+  
+
+} */
