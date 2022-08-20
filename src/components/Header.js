@@ -1,6 +1,6 @@
 import React from 'react';
 
-function HeaderElt(props) {
+function Header(props) {
     return (
         <nav className='header-nav'>
             <h1 className='site-title'>dangerous lighting</h1>
@@ -8,4 +8,4 @@ function HeaderElt(props) {
     );
 }
 
-export default HeaderElt;
+export default Header;

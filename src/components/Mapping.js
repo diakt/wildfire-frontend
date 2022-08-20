@@ -1,10 +1,9 @@
 import React, { useState, useEffect} from 'react';
 import FireUnit from './FireUnit';
 import Map, {NavigationControl, GeolocateControl } from 'react-map-gl'
-
 import haversine from 'haversine';
 import MarkerMult from './MarkerMult'
-import FooterElt from './FooterElt';
+import FooterElt from './Footer';
 import LocForm from './LocForm';
 
 
@@ -16,11 +15,6 @@ function Mapping() {
     const [fireData, setFireData] = useState([])
     const [sortedFireData, setSortedFireData] = useState([])
     const [footerText, setFooterText] = useState("Select a fire to see more.")
-
-    
-
-    
-
 
     //functions
     function getuserLatLong() {

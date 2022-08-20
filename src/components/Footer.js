@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FooterElt(props) {
+function Footer(props) {
     return (
         <nav className='footer'>
             <p>{props.footerText}</p>
@@ -8,4 +8,4 @@ function FooterElt(props) {
     );
 }
 
-export default FooterElt;
+export default Footer;
