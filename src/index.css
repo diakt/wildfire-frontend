@@ -27,15 +27,19 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
   top: 0;
-  background-color: #996A84;
-  border: black;
-  border-style: solid;
+  margin-bottom: 2vh;
   min-width: 95vw;
   max-width: 95vw;
-  min-height: 8vh;
-  max-height: 8vh;
-  margin-bottom: 2vh;
+  min-height: 6vh;
+  max-height: 6vh;
+  
+  border: black;
+  border-style: solid;
+  background-color: #996A84;
+
+  border-style: solid;
 
 }
 
@@ -43,60 +47,43 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  width: 29vw;
+  max-width: 40vw;
   margin-left: 1.5vw;
-  padding: 0;
-  /* border: red;
+  /* border: black;
   border-style: dashed; */
-  
+}
+
+
+.header-link{
+  text-decoration: none;
+  color: black;
+  margin-right: 2vw;
 }
 
 .site-title {
   margin: 0px;
-  /* margin-left: */
+  list-style: none;
   padding: 0;
-  /* border: black;
-  border-style: dashed; */
-
 }
 
 
+
+/*----------------------------------------------------------*/
 
 main {
   display:flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
-  
-
-  background-color: red;
-
   min-width: 95vw;
+
   margin-bottom: 2vh;
 
 }
 
-
-footer {
-  display: flex;
-  flex-direction: column;
-  bottom: 0;
-  background-color: #996A84;
-  border: black;
-  border-style: solid;
-  min-width: 95vw;
-  max-width: 95vw;
-  min-height: 8vh;
-  max-height: 8vh;
-  overflow-y:auto;
-}
-
-
-
-.loading-screen{
+/* .loading-screen{
   margin: 0 auto;
-}
+} */
 
 
 .fires-container {
@@ -108,7 +95,6 @@ footer {
   padding: 0;
   width: 100%;
   height: 100%;
-
 }
 
 .left-box{
@@ -116,12 +102,8 @@ footer {
   flex-direction: column;
   background-color: #549FA2;
   overflow-y:auto;
-
   width: 29vw;
   height: 75vh;
-
-  /* border: white;
-  border-style: solid; */
 }
 
 .left-section-title { /* Fires in your area */
@@ -160,29 +142,13 @@ footer {
   list-style: none;
   width: 99%;
 
-  /* border: green;
-  border-style: dashed; */
-
 }
 
 .fire-detail {
   margin-left: 0px;
   margin: 0;
   padding: 0;
-
-  /* border: blue;
-  border-style: dotted; */
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* within mapbox container */
@@ -196,55 +162,104 @@ footer {
   margin: 0;
   padding: 0;
 
-  /* border: white;
-  border-style: solid; */
-
-
-
 }
-
-
 
 .marker {
   margin: 0;
   padding: 0;
 }
 
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .fire-event-list {
+.about{
+  min-width: 95vw;
+  max-width: 95vw;
   display: flex;
-  width:90%;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: lightcyan;
-
-  border: red;
-  border-style: dashed;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #549FA2;
+  /* border: red;
+  border-style: solid; */
+  
 }
 
-.fire-event {
-  list-style: none;
-  
-  width: 25vw;
+
+.discourse{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: blue;
+  border-style: solid;
+
+}
+
+.about-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 90vw;
+  border: red;
+  border-style: solid;
+  margin-bottom: 2vh;
+
+}
+
+.about-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 60vw;
+  max-width: 60vw;
+  background-color: white;
+}
+
+.about-image{
+  display: flex;
+  margin-left: 2vw;
+  min-width: 25vw;
+  max-width: 25vw;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------*/
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  background-color: #996A84;
   border: black;
   border-style: solid;
-  
+  min-width: 95vw;
+  max-width: 95vw;
+  min-height: 8vh;
+  max-height: 8vh;
+  overflow-y:auto;
+}
 
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+

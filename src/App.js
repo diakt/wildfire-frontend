@@ -15,16 +15,16 @@ function App() {
       <header>
         <Header />
       </header>
-      <main>
-        <Routes>
-          <Route path="/" element={<Mapping />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-        <Mapping />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+
+      <Routes>
+        <Route path="/" element={<Mapping />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+
+      {/* <footer>
+        <Footer/>
+      </footer> */}
+
     </div>
   );
 }

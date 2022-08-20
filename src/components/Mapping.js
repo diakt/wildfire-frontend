@@ -3,7 +3,7 @@ import FireUnit from './FireUnit';
 import Map, {NavigationControl, GeolocateControl } from 'react-map-gl'
 import haversine from 'haversine';
 import MarkerMult from './MarkerMult'
-import FooterElt from './Footer';
+import Footer from './Footer';
 import LocForm from './LocForm';
 
 
@@ -58,15 +58,6 @@ function Mapping() {
                 setFireData((data.features).filter(element =>
                     (element.attributes.DiscoveryAcres != null || element.attributes.DiscoveryAcres != null || element.attributes.CalculatedAcres != null)
                 ))
-
-                //I leave this in here as a reminder for future expansion.
-                // setFireData((data.features).filter(element =>
-                //     ((element.attributes.CalculatedAcres != null))
-                //     || ((element.attributes.DailyAcres > 1 || element.attributes.DiscoveryAcres > 0.1) && element.attributes.FireDiscoveryDateTime > 1650553364000)
-                //     || ((element.attributes.DailyAcres > 5 || element.attributes.DiscoveryAcres > 0.1) && element.attributes.FireDiscoveryDateTime > 1647874964000)
-                // ))
-
-                
             })
             .catch((err) => console.log(err))
     }
@@ -122,8 +113,8 @@ function Mapping() {
 
     //chains after we get userlocation to get our data, but also if we submit a lat/long through page form.
     useEffect(() => {
- 
         if (!userLatLong) {
+            //do nothing
         }
         else {
             setFooterText("Select a fire to see more.")
@@ -194,7 +185,7 @@ function Mapping() {
                 </div>
             </main>
             <footer>
-                <FooterElt footerText={footerText} />
+                <Footer footerText={footerText} />
             </footer>
         </div>
     );
